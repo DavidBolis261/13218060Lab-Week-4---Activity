@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConsolePrint : MonoBehaviour
+public class PrintAndHide : MonoBehaviour
 {
-   int i = 0;
+    public Renderer rend;
+    
     void Start()
     {
         
@@ -14,7 +15,5 @@ public class ConsolePrint : MonoBehaviour
     void Update()
     {
         
-        Debug.Log("<"+gameObject.name+">: "+i);
-        i++;
     }
 }
